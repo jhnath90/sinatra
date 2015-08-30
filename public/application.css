@@ -1,0 +1,33 @@
+.jumbotron {
+	border-bottom: solid white;
+}
+
+.navbar {
+	border: solid white;
+}
+
+img {
+	margin: 10px;
+	border: solid white;
+}
+
+
+h1 {
+	
+	font-weight: 200;
+}
+
+h2 {
+	
+	font-weight: 200;
+}
+
+
+form {
+	background-color: lightblue;
+	margin: 25px;
+}
+
+body {
+	background-color: lightblue;
+}

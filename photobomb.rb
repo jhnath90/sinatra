@@ -27,3 +27,9 @@ get '/:resolution/:hashtag' do
 	@photos = recent_photos(params[:hashtag],params[:resolution])
 	erb :all_photos
 end	
+
+post '/search' do
+@title = params["hashtag"].capitalize
+@photos = recent_photos(params["hashtag"],params["resolution"])
+erb :all_photos
+end	

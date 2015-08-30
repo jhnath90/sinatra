@@ -1,7 +1,11 @@
+<link rel="stylesheet" type="text/css" href="/application.css">
+
+
 <% if @photos.count > 0%>
 	<% @photos.each do |photo|%>
-	<img src="<%= photo %>"></img>
+	<div class="col-md-2"><img src="<%= photo %>"></img></div>
 <% end %>
 <% else %>
 	<h4>Sorry...no photos here.</h4>
 <% end %>
+

@@ -4,12 +4,42 @@
 	<title><%= @title + ' |Instagram API' %></title>
 	<link rel="stylesheet" type="text/css" href="/reset.css">
 	<link rel="stylesheet" type="text/css" href="/style.css">
+	<link rel="stylesheet" type="text/css" href="/application.css">
+	
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 </head>
+
 <body>
-<h1><a href="/">Photobomb</a></h1>
-<h2>'cause photos are nice.</h2>
+
+<div class="jumbotron">
+  <h1><a href="/">Welcome to Photobomb!</a></h1>
+  <h2>Photos by Has#tag</h2>
+  
+</div>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+	     <form id="search-photos" action="/search" method="post" style="text-align:center">
+			 <input name="hashtag" type="text" placeholder="#hashtag" />
+			 	<select name="resolution">
+					<option value="" disabled selected>Pick the size</option>
+					<option value="thumbnail">Thumbnail</option>
+					<option value="low_resolution">Low Resolution</option>
+					<option value="standard_resolution">Standard Resolution</option>
+			 	</select>
+			 <input type="submit" name="submit" value="search" /> 
+		</form>
+    </div>
+  </div>
+</nav>
+
+
 
 <%= yield %>
 
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
 </html>
